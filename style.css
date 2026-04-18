@@ -317,21 +317,19 @@ input:checked + .slider:before { transform: translateX(20px); }
     height: 280px;
     border-radius: 20px;
     position: relative;
-    border: 3px solid var(--gold);
-    box-shadow: 0 0 12px var(--gold-dim), 0 0 30px rgba(212, 175, 55, 0.15);
-    animation: gold-glow-pulse 2.5s ease-in-out infinite;
+    animation: gold-glow-pulse 3s ease-in-out infinite;
 }
 
 @keyframes gold-glow-pulse {
     0%, 100% {
-        box-shadow: 0 0 10px rgba(212, 175, 55, 0.4),
-                    0 0 25px rgba(212, 175, 55, 0.2),
-                    0 0 50px rgba(212, 175, 55, 0.08);
+        box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.5),
+                    0 0 18px rgba(212, 175, 55, 0.3),
+                    0 0 40px rgba(212, 175, 55, 0.1);
     }
     50% {
-        box-shadow: 0 0 20px rgba(212, 175, 55, 0.8),
-                    0 0 50px rgba(212, 175, 55, 0.4),
-                    0 0 90px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.9),
+                    0 0 35px rgba(212, 175, 55, 0.5),
+                    0 0 70px rgba(212, 175, 55, 0.2);
     }
 }
 
@@ -1504,6 +1502,15 @@ footer {
         grid-column: 1;
         grid-row: auto;
         aspect-ratio: 16/9;
+    }
+
+    /* Academy CTA button */
+    .academy-cta { padding-top: 2rem; margin-top: 2rem; }
+    .btn-academy-site {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     /* Contact */
