@@ -316,13 +316,32 @@ input:checked + .slider:before { transform: translateX(20px); }
     width: 280px;
     height: 280px;
     border-radius: 20px;
-    padding: 4px;
-    background: conic-gradient(var(--gold), transparent 60%, var(--gold));
+    position: relative;
     box-shadow: 0 0 40px var(--gold-dim), 0 0 80px rgba(212, 175, 55, 0.05);
-    animation: ring-spin 8s linear infinite;
 }
 
-@keyframes ring-spin {
+/* Spinning gold border — uses a rotating conic-gradient behind the image */
+.hero-photo-ring::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 22px;
+    background: conic-gradient(var(--gold), transparent 40%, var(--gold) 70%, transparent 90%, var(--gold));
+    animation: border-spin 4s linear infinite;
+    z-index: 0;
+}
+
+/* Mask inside so only the border ring is visible */
+.hero-photo-ring::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 17px;
+    background: var(--bg-color);
+    z-index: 1;
+}
+
+@keyframes border-spin {
     from { transform: rotate(0deg); }
     to   { transform: rotate(360deg); }
 }
@@ -334,7 +353,8 @@ input:checked + .slider:before { transform: translateX(20px); }
     object-fit: cover;
     object-position: center top;
     display: block;
-    animation: ring-spin 8s linear infinite reverse;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-photo-badges {
