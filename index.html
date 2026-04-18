@@ -17,7 +17,7 @@
     <nav class="sticky-nav" id="stickyNav">
         <div class="container nav-inner">
             <span class="nav-logo">SR<span class="gold-dot">.</span></span>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#academy">Academy</a>
                 <a href="#experience">Experience</a>
                 <a href="#gallery">Gallery</a>
@@ -25,12 +25,17 @@
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="nav-right">
             <div class="nav-theme-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
                     <div class="slider"></div>
                 </label>
                 <span class="slider-icon" id="sliderIcon">🌙</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
             </div>
         </div>
     </nav>
@@ -478,6 +483,18 @@
             }
         }
         toggleSwitch.addEventListener('change', switchTheme, false);
+
+        // --- Hamburger Menu ---
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+        }));
 
         // --- Sticky Nav Shadow on Scroll ---
         const nav = document.getElementById('stickyNav');
