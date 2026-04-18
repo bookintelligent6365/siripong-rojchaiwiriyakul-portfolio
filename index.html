@@ -457,6 +457,9 @@
         </div>
     </footer>
 
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">&uarr;</button>
+
     <script>
         // --- Theme Toggle ---
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -496,11 +499,31 @@
             navLinks.classList.remove('open');
         }));
 
-        // --- Sticky Nav Shadow on Scroll ---
+        // --- Sticky Nav Shadow on Scroll + Scroll-to-Top ---
         const nav = document.getElementById('stickyNav');
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 50);
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 600);
         });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- Active Nav Link on Scroll ---
+        const sections = document.querySelectorAll('section[id]');
+        const navAnchors = document.querySelectorAll('.nav-links a');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navAnchors.forEach(a => {
+                        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(s => sectionObserver.observe(s));
 
         // --- Scroll Reveal Animation ---
         const revealObserver = new IntersectionObserver((entries) => {
