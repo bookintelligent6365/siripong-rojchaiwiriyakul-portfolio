@@ -494,6 +494,115 @@ footer {
 }
 
 /* =============================================
+   COURSE CARDS — WITH YOUTUBE THUMBNAIL
+   ============================================= */
+.course-card-premium {
+    padding: 0;
+    overflow: hidden;
+}
+
+.course-thumb-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.course-thumb-link:hover .course-thumb { transform: scale(1.05); }
+
+.course-thumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.course-thumb-link:hover .course-thumb-overlay { opacity: 1; }
+
+.course-card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.course-card-body h3 {
+    margin-bottom: 0.8rem;
+    color: var(--gold);
+}
+
+.course-card-body p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* =============================================
+   PROJECT CARDS — WITH SCREENSHOT
+   ============================================= */
+.project-card-premium {
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-img-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-img-link:hover .project-img { transform: scale(1.04); }
+
+.project-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 175, 55, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-img-link:hover .project-img-overlay { opacity: 1; }
+
+.project-card-body {
+    padding: 2.5rem;
+}
+
+/* =============================================
    HERO — 2-COLUMN LAYOUT WITH PHOTO
    ============================================= */
 .hero-layout {
