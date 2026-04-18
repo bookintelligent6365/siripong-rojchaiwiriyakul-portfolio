@@ -3,76 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siripong Guu | Senior Sales Analyst Portfolio</title>
+    <title>Siripong Rojchaiwiriyakul | Data Educator & Executive Strategist</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider"></div>
-        </label>
-        <span class="slider-icon">🌙</span>
-    </div>
+    <!-- Premium Background Elements -->
+    <div class="glow-bg"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav" id="stickyNav">
+        <div class="container nav-inner">
+            <span class="nav-logo">SR<span class="gold-dot">.</span></span>
+            <div class="nav-links">
+                <a href="#academy">Academy</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-theme-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+                <span class="slider-icon" id="sliderIcon">🌙</span>
+            </div>
+        </div>
+    </nav>
 
     <header class="hero">
-        <div class="container">
-            <h1>Siripong Guu</h1>
-            <p class="subtitle">Senior Sales Analyst</p>
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <div class="badge-premium">Data Educator | Executive Strategist</div>
+                <h1>Siripong Rojchaiwiriyakul</h1>
+                <p class="subtitle">Improving Life through Systems, Data, and Education</p>
+                <div class="hero-description">
+                    <p>Bridging the gap between technical data mastery and practical business growth. Founder of <strong>Book Intelligent Academy</strong> and Senior Sales Analyst with 10+ years of corporate impact at Ford and ExxonMobil.</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#academy" class="btn btn-gold">Explore Academy</a>
+                    <a href="#experience" class="btn btn-gold-outline">Corporate Impact</a>
+                    <a href="Siripong Rojchaiwiriyakul Resume professional -2026.pdf" class="btn btn-ghost" download>Download CV</a>
+                </div>
+                <div class="hero-meta">
+                    <span class="meta-item">📍 Bangkok, Thailand</span>
+                    <span class="meta-item">📞 +66 96-396-6554</span>
+                    <span class="meta-item">🇹🇭 Thai · 🇬🇧 English</span>
+                </div>
+            </div>
+            <div class="hero-photo-wrapper">
+                <div class="hero-photo-ring">
+                    <img src="Picture/profile/siripong-profile.jpg" alt="Siripong Rojchaiwiriyakul" class="hero-photo">
+                </div>
+                <div class="hero-photo-badges">
+                    <span class="photo-badge">Microsoft PL-300</span>
+                    <span class="photo-badge">MOS Excel Expert</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Sales Forecasting Model</h3>
-                    <p>A time-series analysis tool built to predict quarterly revenue with 95% accuracy using Python and Prophet.</p>
-                    <a href="#" class="project-link">View Repo &rarr;</a>
+
+        <!-- Book Intelligent Academy Section -->
+        <section id="academy" class="academy premium-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Book Intelligent Academy</span>
+                <h2>Data Mastery Courses</h2>
+            </div>
+            <div class="course-grid">
+                <div class="course-card-premium reveal">
+                    <div class="course-icon">📊</div>
+                    <h3>Power BI Mastery</h3>
+                    <p>End-to-end dashboard development. Learn data modeling, complex DAX, and executive-level storytelling.</p>
+                    <a href="https://www.youtube.com/@bookintelligent6509" class="btn-text">View Masterclass &rarr;</a>
                 </div>
-                <div class="project-card">
-                    <h3>Market Basket Analysis</h3>
-                    <p>Deep dive into customer purchasing patterns to optimize product placement and cross-selling strategies.</p>
-                    <a href="#" class="project-link">View Repo &rarr;</a>
+                <div class="course-card-premium reveal">
+                    <div class="course-icon">🗄️</div>
+                    <h3>SQL for Professionals</h3>
+                    <p>Unlock the power of databases. A foundational course designed for non-technical users to query and analyze data.</p>
+                    <a href="https://www.youtube.com/@bookintelligent6509" class="btn-text">View Masterclass &rarr;</a>
                 </div>
-                <div class="project-card">
-                    <h3>Interactive Sales Dashboard</h3>
-                    <p>Real-time Power BI dashboard for executive stakeholders, providing insights into regional KPIs and trends.</p>
-                    <a href="#" class="project-link">View Demo &rarr;</a>
+                <div class="course-card-premium reveal">
+                    <div class="course-icon">⚙️</div>
+                    <h3>Excel & Sheets Automation</h3>
+                    <p>Beyond formulas. Mastering dynamic arrays, QUERY, and automation using VBA and Apps Script.</p>
+                    <a href="https://www.bookintelligent.com/" class="btn-text">Download Templates &rarr;</a>
+                </div>
+            </div>
+            <div class="brand-stats-compact">
+                <div class="stat-compact">
+                    <span class="stat-value-gold" data-target="5200">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label-gold">Subscribers</span>
+                </div>
+                <div class="stat-compact">
+                    <span class="stat-value-gold" data-target="185">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label-gold">Videos</span>
+                </div>
+                <div class="stat-compact">
+                    <span class="stat-value-gold" data-target="100">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label-gold">Free Solutions</span>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Contact Details</h2>
-            <div class="contact-links">
-                <a href="mailto:siripong.guu@example.com">Email</a>
-                <a href="https://linkedin.com/in/siripong-guu">LinkedIn</a>
-                <a href="https://github.com/siripong-guu">GitHub</a>
+        <!-- Experience Section — Full Career Timeline -->
+        <section id="experience" class="experience premium-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2>Professional Tenure</h2>
+            </div>
+            <div class="timeline">
+
+                <!-- Ford 2026–Present: Senior Sales Analyst -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-header">
+                        <h3>Ford Sales & Service</h3>
+                        <span class="date">2026 — Present</span>
+                    </div>
+                    <p class="role">Senior Sales Analyst</p>
+                    <ul>
+                        <li><strong>Data-Driven Insights:</strong> Utilized Big Data and Power BI to develop interactive dashboards, KPI, and Target tracking — optimizing supply-demand alignment for real-time strategic decision-making.</li>
+                        <li><strong>Sales Strategy & Forecasting:</strong> Led national sales forecasting and dealer performance tracking, leveraging industry trends to optimize market strategies.</li>
+                        <li><strong>Process Optimization:</strong> Automated complex data workflows from VISTA/SEER systems, significantly improving reporting accuracy and operational speed.</li>
+                        <li><strong>Incentive & Performance Management:</strong> Managed intricate incentive structures and performance summaries for dealers and management to drive national targets.</li>
+                        <li><strong>Cross-functional Leadership:</strong> Collaborated with Marketing, Finance, and Zone Managers to synchronize operations and ensure cohesive reporting.</li>
+                    </ul>
+                </div>
+
+                <!-- Ford 2018–2026: Sale Zone Manager -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-header">
+                        <h3>Ford Sales & Service</h3>
+                        <span class="date">2018 — 2026</span>
+                    </div>
+                    <p class="role">Sale Zone Manager</p>
+                    <ul>
+                        <li>Oversaw and supported dealerships across multiple regions — East, South, North, and Northeast Thailand.</li>
+                        <li>Strategized and executed monthly sales, stock, and production rollout plans, proactively driving dealers to meet and surpass volume and market share targets.</li>
+                        <li>Developed and trained dealership teams in sales skills, providing guidance on offline and online sales strategies.</li>
+                        <li>Planned and executed marketing activities and campaigns to generate prospects and secure bookings, ensuring alignment with company stock levels.</li>
+                    </ul>
+                    <div class="achievement-card reveal">
+                        <a href="Picture/certs/cert-ford-topgun-zm.jpg" target="_blank" class="achievement-img-link">
+                            <img src="Picture/certs/cert-ford-topgun-zm.jpg"
+                                 alt="Ford Top Gun ZM Training Program"
+                                 class="achievement-img">
+                            <div class="achievement-overlay">
+                                <span>🏅 Ford Top Gun — ZM Training Program · "Best of the Best"</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ford 2017–2018: Sale Analyst -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-header">
+                        <h3>Ford Sales & Service</h3>
+                        <span class="date">2017 — 2018</span>
+                    </div>
+                    <p class="role">Sale Analyst</p>
+                    <ul>
+                        <li>Set monthly and annual dealer targets using predictive analytics for accuracy.</li>
+                        <li>Developed automated reports and forecasting models: Financial Model, Sales Stock Run Down, and Dealer Business Plan to optimize sales and production planning.</li>
+                        <li>Supported sales forecasting and inventory optimization by integrating large-scale data analysis.</li>
+                    </ul>
+                </div>
+
+                <!-- Ford 2015–2016: Management Trainee -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-header">
+                        <h3>Ford Sales & Service</h3>
+                        <span class="date">2015 — 2016</span>
+                    </div>
+                    <p class="role">Management Trainee, Sales <span class="role-sub">(Rotated across 5 functions)</span></p>
+                    <ul>
+                        <li><strong>Sales Planning</strong> — Forecasted vehicle sales volume, analyzed aging stock for marketing campaigns, and developed sales reporting systems.</li>
+                        <li><strong>Sales Operation (Wholesale)</strong> — Managed vehicle wholesale to dealers; led the Transfer Center Project to optimize vehicle exchange and yard management.</li>
+                        <li><strong>Sales Analyst (Retail)</strong> — Analyzed retail sales data, optimized vehicle mix and color selection, and provided data support for decision-making.</li>
+                        <li><strong>Fleet Analyst</strong> — Assisted in fleet strategy planning, consolidated fleet documents, and streamlined operations.</li>
+                        <li><strong>Sales Zone Management</strong> — Supported dealer sales strategies and collaborated to achieve sales targets.</li>
+                    </ul>
+                </div>
+
+                <!-- Exxon Mobil 2014 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-header">
+                        <h3>Exxon Mobil Corporation</h3>
+                        <span class="date">2014</span>
+                    </div>
+                    <p class="role">Industrial Engineer Trainee</p>
+                    <p class="desc">Optimized fuel delivery by minimizing cost, distance, and time while analyzing end-to-end oil refining processes. Developed supply chain concepts for materials, workflow, and workstation support, improving efficiency and quality.</p>
+                </div>
+
             </div>
         </section>
+
+        <!-- Featured Projects Section -->
+        <section class="projects premium-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Strategic Impact</span>
+                <h2>Key Deliverables</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card-premium reveal">
+                    <span class="proj-year">2025</span>
+                    <h3>BI & Sales Ecosystem</h3>
+                    <p>Designed a nationwide Power BI ecosystem for Sales, Wholesale, and Marketing — reducing daily reporting overhead by 3 hours and enabling real-time executive decision-making.</p>
+                    <div class="tags">
+                        <span class="tag-gold">Power BI</span> <span class="tag-gold">Executive Dashboards</span> <span class="tag-gold">DAX</span>
+                    </div>
+                </div>
+                <div class="project-card-premium reveal">
+                    <span class="proj-year">2023</span>
+                    <h3>Lead Management System (LMS)</h3>
+                    <p>Architected a nationwide LMS platform for customer data tracking, sales follow-ups, and analysis — boosting conversion rates, engagement, and profitability.</p>
+                    <div class="tags">
+                        <span class="tag-gold">Platform Design</span> <span class="tag-gold">Data Strategy</span>
+                    </div>
+                </div>
+                <div class="project-card-premium reveal">
+                    <span class="proj-year">2021</span>
+                    <h3>Northern Dealer Growth Strategy</h3>
+                    <p>Developed and executed a data-led expansion plan for Northern dealers — increasing sales from 1,346 units (2020) to 1,902 units (+41% YoY).</p>
+                    <div class="tags">
+                        <span class="tag-gold">Forecasting</span> <span class="tag-gold">+41% Growth</span> <span class="tag-gold">Market Expansion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="skills-certs premium-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2>Skills & Certifications</h2>
+            </div>
+            <div class="grid-2-premium">
+                <div class="skills-glass reveal">
+                    <h3>Technical Expertise</h3>
+                    <ul class="premium-list">
+                        <li><span>Advanced Data Modeling</span> (Power BI / DAX)</li>
+                        <li><span>Database Architecture</span> (SQL / BigQuery)</li>
+                        <li><span>Enterprise Automation</span> (VBA / Apps Script)</li>
+                        <li><span>Statistical Analysis</span> (Python / Pandas)</li>
+                        <li><span>Financial Engineering</span> (CFA Framework)</li>
+                        <li><span>Automotive Industry</span> Knowledge & Strategy</li>
+                        <li><span>Team Management</span> & Dealer Training</li>
+                        <li><span>Digital Marketing</span> & Campaign Planning</li>
+                    </ul>
+                    <div class="lang-row">
+                        <span class="lang-badge">🇹🇭 Thai</span>
+                        <span class="lang-badge">🇬🇧 English</span>
+                    </div>
+                </div>
+                <div class="certs-column reveal">
+                    <div class="cert-card-premium cert-card-img">
+                        <a href="Picture/certs/cert-powerbi-pl300.jpg" target="_blank" class="cert-img-link">
+                            <img src="Picture/certs/cert-powerbi-pl300.jpg"
+                                 alt="Microsoft Power BI Data Analyst Associate PL-300"
+                                 class="cert-img">
+                            <div class="cert-img-overlay">View Certificate</div>
+                        </a>
+                        <div class="cert-info">
+                            <strong>Microsoft Certified</strong>
+                            <p>Power BI Data Analyst Associate (PL-300) · Feb 2025</p>
+                        </div>
+                    </div>
+                    <div class="cert-card-premium cert-card-img">
+                        <a href="Picture/certs/cert-excel-expert.jpg" target="_blank" class="cert-img-link">
+                            <img src="Picture/certs/cert-excel-expert.jpg"
+                                 alt="Microsoft Office Specialist Excel Expert 365"
+                                 class="cert-img">
+                            <div class="cert-img-overlay">View Certificate</div>
+                        </a>
+                        <div class="cert-info">
+                            <strong>Microsoft Office Specialist</strong>
+                            <p>Excel Expert 365 · Oct 2024</p>
+                        </div>
+                    </div>
+                    <div class="cert-card-premium">
+                        <div class="cert-icon-gold">💎</div>
+                        <div class="cert-info">
+                            <strong>CFA Institute</strong>
+                            <p>Chartered Financial Analyst (Level 1)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education premium-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Academic Foundation</span>
+                <h2>Education</h2>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-info">
+                    <h3>Chulalongkorn University</h3>
+                    <p class="edu-degree">Bachelor of Engineering — Industrial Engineering</p>
+                    <div class="edu-meta">
+                        <span class="edu-year">2012 — 2015</span>
+                        <span class="edu-gpa">GPAX 3.29</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact premium-section reveal">
+            <div class="contact-card-premium">
+                <h2>Inquire & Collaborate</h2>
+                <p>Available for strategic consulting, corporate training, and executive partnerships.</p>
+                <div class="premium-contact-links">
+                    <a href="mailto:siripong.ro@gmail.com" class="contact-item">Email</a>
+                    <a href="https://www.linkedin.com/in/siripong-rojchaiwiriyakul-085796b6/" class="contact-item">LinkedIn</a>
+                    <a href="https://github.com/bookintelligent6365" class="contact-item">GitHub</a>
+                    <a href="https://www.youtube.com/@bookintelligent6509" class="contact-item">YouTube</a>
+                    <a href="https://www.bookintelligent.com/" class="contact-item">Website</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Siripong Guu. Built with JetBrains Mono.</p>
+            <p>&copy; 2026 Siripong Rojchaiwiriyakul. All Rights Reserved. Crafted for Excellence.</p>
         </div>
     </footer>
 
     <script>
+        // --- Theme Toggle ---
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const sliderIcon = document.getElementById('sliderIcon');
         const currentTheme = localStorage.getItem('theme');
 
         if (currentTheme) {
             document.documentElement.setAttribute('data-theme', currentTheme);
-
             if (currentTheme === 'light') {
                 toggleSwitch.checked = true;
-                document.querySelector('.slider-icon').textContent = '☀️';
+                sliderIcon.textContent = '☀️';
             }
         }
 
@@ -80,15 +359,56 @@
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
-                document.querySelector('.slider-icon').textContent = '☀️';
+                sliderIcon.textContent = '☀️';
             } else {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
-                document.querySelector('.slider-icon').textContent = '🌙';
-            }    
+                sliderIcon.textContent = '🌙';
+            }
         }
-
         toggleSwitch.addEventListener('change', switchTheme, false);
+
+        // --- Sticky Nav Shadow on Scroll ---
+        const nav = document.getElementById('stickyNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // --- Scroll Reveal Animation ---
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // --- Counter Animation ---
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = +el.dataset.target;
+                    const duration = 1600;
+                    const step = target / (duration / 16);
+                    let current = 0;
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        el.textContent = Math.floor(current).toLocaleString();
+                    }, 16);
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
     </script>
 </body>
 </html>
